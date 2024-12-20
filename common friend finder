@@ -1,0 +1,12 @@
+def find_common_friends(user1_friends, user2_friends):
+    common_friends = []
+    for friend in user1_friends:
+        if friend in user2_friends:
+            common_friends.append(friend)
+    return common_friends
+
+user1_friends = ["prit", "Aryan", "om", "meet"]
+user2_friends = ["om", "Dhruv", "prit", "rajan"]
+
+common_friends = find_common_friends(user1_friends, user2_friends)
+print("Common Friends:", common_friends)
